@@ -6,7 +6,7 @@ export const Navbar = () => {
 
   return (
     <header className="w-full bg-slate-900 border-b border-slate-800 text-slate-200 py-3 px-6 sticky top-0 z-50 shadow-lg">
-      <div className="max-w-7xl mx-mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-7xl mx-mx-auto flex flex-col md:flex-row items-center justify-between gap-4 margin-1">
         
         {/* Datos Personales */}
         <div className="flex items-center gap-3">
