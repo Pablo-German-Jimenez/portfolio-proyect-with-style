@@ -2,7 +2,7 @@
 .atom-container {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,8 +11,8 @@
 
 /* Núcleo Central en Movimiento */
 .atom-nucleus {
- width: 100px;             /* Ajusta según el tamaño que quieras para el centro del átomo */
-  height: 100px;            /* Mismo alto para mantener la forma circular */
+ width: 50px;             /* Ajusta según el tamaño que quieras para el centro del átomo */
+  height: 50px;            /* Mismo alto para mantener la forma circular */
   border-radius: 50%;       /* Para mantener la forma del núcleo */
   overflow: hidden;         /* <--- CLAVE: Corta lo que se salga del círculo */
   display: flex;
@@ -37,8 +37,8 @@ width: 100%;
 /* Estructura Base de las Órbitas */
 .orbit {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
   border: 2px solid rgba(34, 211, 238, 0.4);
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(34, 211, 238, 0.15);
@@ -46,17 +46,20 @@ width: 100%;
 
 /* Inclinación de cada elipse del Átomo de React */
 .orbit-1 {
-  transform: rotateX(65deg) rotateY(-30deg);
+  transform: rotateX(50deg) rotateY(-50deg);
 }
 
 .orbit-2 {
   transform: rotateX(65deg) rotateY(30deg);
 }
 
+/* Estilos del trazo de la órbita 3 (Vertical) */
 .orbit-3 {
-  transform: rotateX(625deg) rotateY(90deg);
+  /* Al rotar 90deg o 270deg la elipse queda perfectamente vertical (de arriba a abajo) */
+  transform: translate(-50%, -50%) rotateZ(10deg) rotateY();
+  border: 1.5px solid rgba(247, 223, 30, 0.4); /* Opcional: un tono amarillo/dorado suave para JS */
+  box-shadow: 0 0 10px rgba(247, 223, 30, 0.15);
 }
-
 .orbit-4 {
   transform: rotateX(0deg) rotateY(0deg); /* Órbita plana frontal opcional */
   border-color: rgba(34, 211, 238, 0.2);

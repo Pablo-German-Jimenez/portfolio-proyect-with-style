@@ -1,7 +1,7 @@
 import { IonApp, IonContent } from '@ionic/react';
-import { Navbar } from './components/layout/Navbar';
 import { HeroCarousel } from './components/hero/HeroCarousel';
 import FooterBboyLinkinStyle from './components/layout/Footer';
+import NavBarComponent from './components/layout/ComponentNavBar';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between">
           
           {/* Header/Navbar */}
-          <Navbar />
+          <NavBarComponent />
           <HeroCarousel/>
           <main className="max-w-7xl mx-auto w-full p-6 flex-1 flex flex-col justify-center items-center">
             

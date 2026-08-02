@@ -1,4 +1,3 @@
-import React from "react";
 import "../../ReactAtom.css";
 import  bboyLinkinCoding   from "../../../public/bboylLinkinCoding.mp4";
 
