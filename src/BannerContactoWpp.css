@@ -1,0 +1,45 @@
+/* Estilos base */
+        .btn-contact-custom {
+          transition: all 0.3s ease-in-out;
+          background-color: transparent;
+        }
+
+        .btn-contact-custom .icon-svg {
+          transition: fill 0.3s ease-in-out;
+        }
+
+        /* Estilos específicos WhatsApp */
+        .btn-wpp {
+          color: #25D366;
+          border: 2px solid #25D366;
+        }
+        .btn-wpp .icon-svg {
+          fill: #25D366;
+        }
+        .btn-wpp:hover {
+          background-color: #25D366;
+          border-color: #ffffff;
+          color: #ffffff;
+          box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+        }
+        .btn-wpp:hover .icon-svg {
+          fill: #ffffff;
+        }
+
+        /* Estilos específicos Gmail */
+        .btn-gmail {
+          color: #EA4335;
+          border: 2px solid #EA4335;
+        }
+        .btn-gmail .icon-svg {
+          fill: #EA4335;
+        }
+        .btn-gmail:hover {
+          background-color: #EA4335;
+          border-color: #ffffff;
+          color: #ffffff;
+          box-shadow: 0 0 15px rgba(234, 67, 53, 0.4);
+        }
+        .btn-gmail:hover .icon-svg {
+          fill: #ffffff;
+        }

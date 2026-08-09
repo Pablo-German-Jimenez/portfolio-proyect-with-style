@@ -4,7 +4,8 @@ import FooterBboyLinkinStyle from './components/layout/Footer';
 import NavBarComponent from './components/layout/ComponentNavBar';
 import Aboutme from './components/pages/AboutMe';
 import Projects from './components/pages/Projects';
-import {Route,Switch} from 'react-router-dom';
+import {Route} from 'react-router-dom';
+import BannerContactoWpp from './components/pages/WhatsappContact';
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
           
           <main className="max-w-7xl mx-auto w-full p-6 flex-1 flex flex-col justify-center items-center">
             
-          
+        
           </main>
+           <BannerContactoWpp></BannerContactoWpp>
         <FooterBboyLinkinStyle></FooterBboyLinkinStyle>
         </div>
       </IonContent>
