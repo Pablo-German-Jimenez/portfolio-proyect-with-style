@@ -2,6 +2,9 @@ import { IonApp, IonContent } from '@ionic/react';
 import { HeroCarousel } from './components/hero/HeroCarousel';
 import FooterBboyLinkinStyle from './components/layout/Footer';
 import NavBarComponent from './components/layout/ComponentNavBar';
+import Aboutme from './components/pages/AboutMe';
+import Projects from './components/pages/Projects';
+import {Route,Switch} from 'react-router-dom';
 
 function App() {
   return (
@@ -11,12 +14,18 @@ function App() {
           
           {/* Header/Navbar */}
           <NavBarComponent />
-          <HeroCarousel/>
+          
+          <Route exact path={"/aboutme"}>
+            <Aboutme/>
+          </Route>
+          <Route exact path={"/projects"}>
+            <Projects/>
+          </Route>
+          <Route exact path={'/'}><HeroCarousel/></Route>
+          
           <main className="max-w-7xl mx-auto w-full p-6 flex-1 flex flex-col justify-center items-center">
             
-            <p className="text-slate-500 font-mono text-sm">
-              [ Navbar renderizado con éxito. Listo para el Hero Carousel ]
-            </p>
+          
           </main>
         <FooterBboyLinkinStyle></FooterBboyLinkinStyle>
         </div>

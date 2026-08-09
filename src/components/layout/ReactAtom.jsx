@@ -1,16 +1,19 @@
 import "../../ReactAtom.css";
 import  bboyLinkinCoding   from "../../../public/bboylLinkinCoding.mp4";
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 
 export const ReactAtom = () => {
   return (
     <div className="atom-container">
-      {/* Centro del Átomo: Tu GIF/Video o Imagen en movimiento */}
+     <Link to="/">
       <div className="atom-nucleus">
         <video autoPlay muted loop playsInline className="nucleus-media">
-          <source src={bboyLinkinCoding} type="video/mp4"></source>
+        <source src={bboyLinkinCoding} type="video/mp4"></source>
         </video>
       </div>
 
+     </Link> {/* Centro del Átomo: Tu GIF/Video o Imagen en movimiento */}
+     
       {/* Órbita 1: Ángulo 0deg - Icono HTML */}
       <div className="orbit orbit-1">
         <div className="electron-wrapper">
