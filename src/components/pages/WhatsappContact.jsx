@@ -5,14 +5,14 @@ const BannerContactoWppGmail = () => {
     <section className="w-full bg-dark text-white border-top border-secondary py-5 px-3 text-center">
       <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
         <div className="text-start">
-          <h3 className="fs-4 fw-bold mb-1">¿Tenés un proyecto en mente?</h3>
-          <p className="text-secondary small mb-0">Ponete en contacto a través de WhatsApp o enviame un correo.</p>
+          <h3 className="fs-4 fw-bold mb-1">¿Do you have any project in mind?</h3>
+          <p className="text-white small mb-0">Contact me through Whatsapp or gmail!.</p>
         </div>
 
         <div className="d-flex flex-column flex-sm-row gap-3">
           {/* Botón WhatsApp */}
           <a 
-            href="https://wa.me/549381XXXXXXX?text=Hola%20Pablo,%20visto%20tu%20portfolio%20y%20me%20gustaría%20consultarte..." 
+            href="https://wa.me/549381XXXXXXX?text=Hi%20Pablo,%20i%20saw%20your%20portfolio%20and%20i%20would%like%20consult%20you..." 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-contact-custom btn-wpp d-inline-flex align-items-center justify-content-center gap-2 px-4 py-2 rounded-3 text-decoration-none fw-semibold"
@@ -25,7 +25,7 @@ const BannerContactoWppGmail = () => {
 
           {/* Botón Gmail */}
           <a 
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=pablogermanjimenez@gmail.com&su=Consulta%20desde%20el%20Portfolio&body=Hola%20Germán!%20ví%20tu%20portfolio..." 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=pablogermanjimenez@gmail.com&su=Your%20consult%20from%20German's%20Portfolio&body=Hi%20Germán!%20i%20saw%20your%20portfolio..." 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-contact-custom btn-gmail d-inline-flex align-items-center justify-content-center gap-2 px-4 py-2 rounded-3 text-decoration-none fw-semibold"
