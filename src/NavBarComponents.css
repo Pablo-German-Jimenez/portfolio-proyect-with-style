@@ -1,3 +1,64 @@
+:root {
+  --nav-bg: #0d1117;           /* Fondo oscuro estilo GitHub */
+  --nav-border: #30363d;       /* Borde inferior sutil */
+  --text-main: #f0f6fc;        /* Texto principal (Blanco/Gris alto contraste) */
+  --text-muted: #8b949e;       /* Texto secundario */
+  --instagram: #dd7960;
+  --linkedin:rgb(73, 189, 224);     
+  --github:rgb(231, 222, 222);/* Celeste argentino moderno para acentos */
+}
+
 .navBarPrime{
+    background-color:rgb(33, 83, 90);
+   transition: background-color 0.5s ease-in-out; 
+}
+
+.navBarPrime:hover{
+    background-color: rgb(30, 39, 94);
+   
+}
+
+.linkNavBarText{
+    color: rgb(88, 189, 230);
+    margin:50px
+}
+
+.social-group{
+  margin-left:30px;
+}
+
+.linkNavBarText:hover{
+    color:rgb(186, 233, 230);
+    transition:color 0.3s ease-in-out;
+}
+
+.instagram-icon-link:hover {
+  color: var(--instagram);
+  transform: translateY(-4px);
+}
+
+.linkedin-icon-link:hover{
+    color:var(--linkedin);
+    transform:translateY(-4px)
+}
+
+.github-icon-link:hover{
+    color:var(--github);
+    transform:translateY(-4px);
+}
+
+/* Ajustes Responsive para Móvil */
+@media (max-width: 991.98px) {
+  .social-group {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--nav-border);
+    margin:30px;
+  }
   
+  .nav-custom-link::after {
+    display: none;
+  }
 }
