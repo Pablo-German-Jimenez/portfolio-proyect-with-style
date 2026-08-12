@@ -13,7 +13,7 @@ const Projects = () => {
               <img
                 src="elveinticinco.png"
                 className="img-fluid rounded border border-secondary shadow"
-                alt="El veinticinco Project view"
+                alt="El veinticinco Proyect view"
               />
             </div>
           </div>
