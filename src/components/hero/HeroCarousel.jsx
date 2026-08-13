@@ -58,18 +58,18 @@ export const HeroCarousel = () => {
     
     {/* PRIMER GRUPO DE IMÁGENES/MARCAS */}
     <div className="flex gap-8 items-center shrink-0">
-      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
     </div>
 
     {/* SEGUNDO GRUPO (DUPLICADO EXACTO PARA CREAR EL BUCLE INFINITO) */}
     <div className="flex  gap-8 items-center shrink-0">
-      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="./../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
     </div>
 
   </div>
