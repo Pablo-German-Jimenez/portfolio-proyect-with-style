@@ -16,10 +16,10 @@ The project is develop using a modern stack focused in performance and modularit
 - **[React](https://react.dev/)** (`^19.2.8`) - Main framework to construct the interface of user
 - **[Vite](https://vitejs.dev/)** (`^8.2.0`) - Builder tool of latest generation to render more faster and fluid project.
 
-### **Estilos & UI**
+### **Styles & UI**
 - **[Tailwind CSS](https://tailwindcss.com/)** (`^4.3.3`) + **[PostCSS](https://postcss.org/)** / **[Autoprefixer](https://github.com/postcss/autoprefixer)** - Utility-first CSS framework to design
-### **Enrutamiento**
-- **[React Router DOM](https://reactrouter.com/)** (`^5.3.4`) & **[@ionic/react-router](https://ionicframework.com/)** Manage routes and navigation between views
+### **Routering**
+- **[React Router DOM](https://reactrouter.com/)** (`^5.3.4`) 
 
 ---
 
