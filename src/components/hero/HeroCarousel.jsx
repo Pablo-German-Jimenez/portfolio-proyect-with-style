@@ -53,23 +53,23 @@ export const HeroCarousel = () => {
           </div>
         </Carousel.Item>
       </Carousel>
-      <div className="w-full overflow-hidden bg-slate-900 border-y border-slate-800 py-4">
-  <div className="animate-marquee gap-8 items-center">
+      <div  className="w-full h-[50vh] overflow-hidden bg-slate-900 border-y border-slate-800 py-2 flex items-center ">
+  <div className="animate-marquee gap-8 items-center ">
     
     {/* PRIMER GRUPO DE IMÁGENES/MARCAS */}
     <div className="flex gap-8 items-center shrink-0">
-      <img src="https://via.placeholder.com/120x40" alt="Brand 1" className="h-8 object-contain" />
-      <img src="https://via.placeholder.com/120x40" alt="Brand 2" className="h-8 object-contain" />
-      <img src="https://via.placeholder.com/120x40" alt="Brand 3" className="h-8 object-contain" />
-      <img src="https://via.placeholder.com/120x40" alt="Brand 4" className="h-8 object-contain" />
+      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
     </div>
 
     {/* SEGUNDO GRUPO (DUPLICADO EXACTO PARA CREAR EL BUCLE INFINITO) */}
-    <div className="flex gap-8 items-center shrink-0">
-      <img src="https://via.placeholder.com/120x40" alt="Brand 1" className="h-8 object-contain" />
-      <img src="https://via.placeholder.com/120x40" alt="Brand 3" className="h-8 object-contain" />
-      <img src="https://via.placeholder.com/120x40" alt="Brand 2" className="h-8 object-contain" />
-      <img src="https://via.placeholder.com/120x40" alt="Brand 4" className="h-8 object-contain" />
+    <div className="flex  gap-8 items-center shrink-0">
+      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="./../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
     </div>
 
   </div>
