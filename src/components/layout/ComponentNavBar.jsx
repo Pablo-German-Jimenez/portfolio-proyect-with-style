@@ -14,10 +14,13 @@ function NavBarComponent() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto gap-5">
           <Nav.Link as={Link} to="aboutme">
-            <h2 className="linkNavBarText">About me</h2>
+            <h2 className="linkNavBarText">About me🤖</h2>
           </Nav.Link>
           <Nav.Link as={Link} to="projects">
-            <h2 className="linkNavBarText">Projects</h2>
+            <h2 className="linkNavBarText">Projects🧑‍💻</h2>
+          </Nav.Link>
+          <Nav.Link as={Link} to="my-inspirations">
+            <h2 className='linkNavBarText'>My inspirations✍️</h2>
           </Nav.Link>
         </Nav>
         <div className="d-flex  gap-5 social-group mx-5">
