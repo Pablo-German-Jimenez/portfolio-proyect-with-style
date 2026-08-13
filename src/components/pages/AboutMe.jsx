@@ -6,9 +6,9 @@ const AboutMe = () => {
     <section className="max-w-6xl mx-auto px-6 py-12 text-slate-100">
 
       <div className="text-center mb-12">
-        <p className=" mt-3 text-lg max-w-2xl mx-auto font-mono ">
+        <span className=" mt-3 text-lg max-w-2xl mx-auto font-mono ">
           <h1 className="">Developer Full Stack M.E.R.N // Passionated for the code, beacuse it allow to project your thouth in reality🧑‍💻🤖❤️</h1>
-        </p>
+        </span>
       </div>
   
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -18,12 +18,12 @@ const AboutMe = () => {
             <FaLaptopCode size={32} color="blue"/>
             <h3 className="text-2xl font-bold text-slate-100">¿Who i'm?</h3>
           </div>
-          <p className="text-slate-300 leading-relaxed mb-4">
+          <span className="text-slate-300 leading-relaxed mb-4">
            ¡Hi! I'm a developer focused in create web's robust solutions, scalables and dynamic. I work with the languaje Javascript using the Stack **M.E.R.N**(MongoDb,Express,React,Node)
-          </p>
-          <p className="text-slate-300 leading-relaxed">
+          </span>
+          <span className="text-slate-300 leading-relaxed">
           I am characterized by a mindset of continuous learning, discipline, and adaptability. I enjoy transforming ideas into functional digital products, paying close attention to code architecture and user experience.
-          </p>
+          </span>
         </div>
         <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 shadow-xl backdrop-blur-sm space-y-6">
           <div className="flex items-center gap-3 text-blue-400 text-2xl">
