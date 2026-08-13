@@ -5,22 +5,28 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import "../../NavBarComponents.css";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6";
+import {useState} from 'react'
+
 
 function NavBarComponent() {
+const [expanded,setExpanded] = useState(false);
+
+const closeMenu =()=>setExpanded(false)
+  
   return (
-    <Navbar expand="lg" className="navBarPrime">
+    <Navbar expand="lg" className="navBarPrime" expanded={expanded} onToggle={(isExpanded)=>setExpanded(isExpanded)}>
       <ReactAtom />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto gap-5">
-          <Nav.Link as={Link} to="aboutme">
-            <h2 className="linkNavBarText">About me🤖</h2>
+          <Nav.Link as={Link} to="aboutme" onClick={closeMenu}>
+            <span className="linkNavBarText">About me🤖</span>
           </Nav.Link>
-          <Nav.Link as={Link} to="projects">
-            <h2 className="linkNavBarText">Projects🧑‍💻</h2>
+          <Nav.Link as={Link} to="projects"  onClick={closeMenu}>
+            <span className="linkNavBarText">Projects🧑‍💻</span>
           </Nav.Link>
           <Nav.Link as={Link} to="my-inspirations">
-            <h2 className='linkNavBarText'>My inspirations✍️</h2>
+            <span className='linkNavBarText'  onClick={closeMenu}>My inspirations✍️</span>
           </Nav.Link>
         </Nav>
         <div className="d-flex  gap-5 social-group mx-5">
