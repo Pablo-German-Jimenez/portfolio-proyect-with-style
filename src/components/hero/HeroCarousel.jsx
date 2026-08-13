@@ -21,7 +21,7 @@ export const HeroCarousel = () => {
             <iframe
               title="codingAndbrekinghand"
               src="https://player.vimeo.com/video/1217515914?h=806a99754e?autoplay=1&loop=1&muted=1&background=1"
-              frameborder="0"
+              frameBorder="0"
               className="w-full h-full object-cover"
               allow="autoplay; fullscreen"
             ></iframe>
