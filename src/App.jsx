@@ -1,4 +1,3 @@
-import { IonApp, IonContent } from '@ionic/react';
 import { Navbar } from './components/layout/Navbar';
 import { HeroCarousel } from './components/hero/HeroCarousel';
 import FooterBboyLinkinStyle from './components/layout/Footer';
