@@ -2,7 +2,7 @@
 .atom-container {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,29 +11,37 @@
 
 /* Núcleo Central en Movimiento */
 .atom-nucleus {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 10;
-  border: 2px solid #22d3ee;
-  box-shadow: 0 0 20px rgba(34, 211, 238, 0.6);
+ width: 50px;             /* Ajusta según el tamaño que quieras para el centro del átomo */
+  height: 50px;            /* Mismo alto para mantener la forma circular */
+  border-radius: 50%;       /* Para mantener la forma del núcleo */
+  overflow: hidden;         /* <--- CLAVE: Corta lo que se salga del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;       /* Para centrarlo correctamente en el contenedor de las órbitas */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  object-fit: cover;
 }
 
 
 .nucleus-media {
-  width: 100%;
+width: 100%;
   height: 100%;
-  object-fit: cover;
-  display:block;
+  object-fit: cover;        /* <--- CLAVE: Llena todo el círculo sin deformar el video */
+  border-radius: 50%;
 }
 
+.nucleus-medio video{
+  cursor:pointer;
+}
 /* Estructura Base de las Órbitas */
 .orbit {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
   border: 2px solid rgba(34, 211, 238, 0.4);
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(34, 211, 238, 0.15);
@@ -41,17 +49,20 @@
 
 /* Inclinación de cada elipse del Átomo de React */
 .orbit-1 {
-  transform: rotateX(65deg) rotateY(-30deg);
+  transform: rotateX(50deg) rotateY(-50deg);
 }
 
 .orbit-2 {
   transform: rotateX(65deg) rotateY(30deg);
 }
 
+/* Estilos del trazo de la órbita 3 (Vertical) */
 .orbit-3 {
-  transform: rotateX(65deg) rotateY(90deg);
+  /* Al rotar 90deg o 270deg la elipse queda perfectamente vertical (de arriba a abajo) */
+  transform: translate(-50%, -50%) rotateZ(10deg) rotateY();
+  border: 1.5px solid rgba(247, 223, 30, 0.4); /* Opcional: un tono amarillo/dorado suave para JS */
+  box-shadow: 0 0 10px rgba(247, 223, 30, 0.15);
 }
-
 .orbit-4 {
   transform: rotateX(0deg) rotateY(0deg); /* Órbita plana frontal opcional */
   border-color: rgba(34, 211, 238, 0.2);
@@ -69,11 +80,11 @@
 
 /* Diferentes tiempos o direcciones si querés variarlo */
 .orbit-2 .electron-wrapper {
-  animation-duration: 8s;
+  animation-duration: 3s;
 }
 
 .orbit-3 .electron-wrapper {
-  animation-duration: 7s;
+  animation-duration: 4s;
 }
 
 .orbit-4 .electron-wrapper {
@@ -128,4 +139,6 @@
   to {
     transform: translateX(-50%) rotate(-360deg);
   }
-}
+}  
+
+  

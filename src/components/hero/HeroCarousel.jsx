@@ -1,35 +1,12 @@
-import React from "react";
-import { IonContent, IonPage } from "@ionic/react";
-// Importar componentes de Swiper React
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
-// Importar estilos de Swiper
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import Carousel from "react-bootstrap/Carousel";
+import '../styles/BrandMarquee.css'
 
 export const HeroCarousel = () => {
   return (
     <div className="w-full max-w-xl ml-auto">
-      {" "}
-      {/* 'ml-auto' lo ubica a la derecha */}
-      <Swiper
-        speed={5000}
-        modules={[Autoplay, Pagination, Navigation]}
-        spaceBetween={30}
-        slidesPerView={1}
-        loop={true}
-        autoplay={{
-          delay: 5500,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-        className="rounded-2xl overflow-hidden shadow-2xl border border-slate-800"
-      >
-        {/* Slide 1: Tu Vídeo */}
-        <SwiperSlide>
-          <div className="relative h-[300px] w-full bg-slate-900">
+      <Carousel className="rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+        <Carousel.Item>
+          <div className="relative h-[400px] w-full bg-slate-900">
             <iframe
               src="https://player.vimeo.com/video/1163408794?autoplay=1&loop=1&muted=1&background=1"
               className="w-full h-full object-cover pointer-events-none"
@@ -37,35 +14,66 @@ export const HeroCarousel = () => {
               frameBorder="0"
               allow="autoplay; fullscreen"
             ></iframe>
-            <div className="absolute bottom-4 left-4 text-white z-10 font-bold">
-              Proyecto 1: Breakdance & Web Dev
-            </div>
           </div>
-        </SwiperSlide>
-
-        {/* Slide 2: Imagen o Card 2 */}
-        <SwiperSlide>
-          <div className="relative h-[300px]  bg-slate-800 w-full overflow-hidden text-white font-bold flex item-center justify-center">
+        </Carousel.Item>
+        <Carousel.Item >
+          <div className="relative h-[400px]  w-full bg-slate-900">
+            <iframe
+              title="codingAndbrekinghand"
+              src="https://player.vimeo.com/video/1217515914?h=806a99754e?autoplay=1&loop=1&muted=1&background=1"
+              frameBorder="0"
+              className="w-full h-full object-cover"
+              allow="autoplay; fullscreen"
+            ></iframe>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="relative h-[400px] w-full bg-slate-900">
             <iframe
               title="vimeo-player"
               src="https://player.vimeo.com/video/1214508497?h=3040ed10bf?autoplay=1&loop=1&muted=1&background=1"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[170%] h-[100%] min-w-full min-h-full object-cover pointer-events-none"
-            width="640"
-            height="500"
-              frameBorder="0"
-              allow="autoplay; fullscreen;" 
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[170%] h-[100%] min-w-full min-h-full object-cover pointer-events-none"
               
+              frameBorder="0"
+              allow="autoplay; fullscreen"
             ></iframe>
           </div>
-        </SwiperSlide>
+        </Carousel.Item>
 
-        {/* Slide 3: Imagen o Card 3 */}
-        <SwiperSlide>
-          <div className="h-[300px] bg-slate-700 flex items-center justify-center text-white font-bold">
-          <iframe title="vimeo-player" src="https://player.vimeo.com/video/1214512083?h=245ebed5ec&autoplay=1&loop=1&muted=1&background=1" width="940" height="360" frameBorder="0"  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"  ></iframe>
+        <Carousel.Item>
+          <div  className="relative h-[400px] w-full bg-slate-900 d-flex justify-center">
+            <iframe
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/1214512083?h=245ebed5ec&autoplay=1&loop=1&muted=1&background=1"
+              width="940"
+              height="560"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            ></iframe>
           </div>
-        </SwiperSlide>
-      </Swiper>
+        </Carousel.Item>
+      </Carousel>
+      <div  className="w-full h-[50vh] overflow-hidden bg-slate-900 border-y border-slate-800 py-2 flex items-center ">
+  <div className="animate-marquee gap-8 items-center ">
+    
+    {/* PRIMER GRUPO DE IMÁGENES/MARCAS */}
+    <div className="flex gap-8 items-center shrink-0">
+      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
+    </div>
+
+    {/* SEGUNDO GRUPO (DUPLICADO EXACTO PARA CREAR EL BUCLE INFINITO) */}
+    <div className="flex  gap-8 items-center shrink-0">
+      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="./../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
+    </div>
+
+  </div>
+</div>
     </div>
   );
 };

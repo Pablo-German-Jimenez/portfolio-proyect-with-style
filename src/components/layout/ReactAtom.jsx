@@ -1,19 +1,27 @@
-import React from 'react';
-import '../../ReactAtom.css';
+import "../../ReactAtom.css";
+import  bboyLinkinCoding   from "../../../public/bboylLinkinCoding.mp4";
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 
 export const ReactAtom = () => {
   return (
     <div className="atom-container">
-      {/* Centro del Átomo: Tu GIF/Video o Imagen en movimiento */}
+     <Link to="/">
       <div className="atom-nucleus">
-        <video  autoPlay muted loop playsInline className='nucleus-media'><source src="/bboyLinkinCoding.mp4" type="video/mp4"></source></video>
+        <video autoPlay muted loop playsInline className="nucleus-media">
+        <source src={bboyLinkinCoding} type="video/mp4"></source>
+        </video>
       </div>
 
+     </Link> {/* Centro del Átomo: Tu GIF/Video o Imagen en movimiento */}
+     
       {/* Órbita 1: Ángulo 0deg - Icono HTML */}
       <div className="orbit orbit-1">
         <div className="electron-wrapper">
           <div className="electron">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML"
+            />
           </div>
         </div>
       </div>
@@ -22,7 +30,10 @@ export const ReactAtom = () => {
       <div className="orbit orbit-2">
         <div className="electron-wrapper">
           <div className="electron">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS"
+            />
           </div>
         </div>
       </div>
@@ -31,7 +42,10 @@ export const ReactAtom = () => {
       <div className="orbit orbit-3">
         <div className="electron-wrapper">
           <div className="electron">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JS"
+            />
           </div>
         </div>
       </div>
@@ -40,7 +54,10 @@ export const ReactAtom = () => {
       <div className="orbit orbit-4">
         <div className="electron-wrapper">
           <div className="electron">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
           </div>
         </div>
       </div>

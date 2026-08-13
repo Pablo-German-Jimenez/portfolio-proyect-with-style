@@ -1,0 +1,83 @@
+:root {
+  --nav-bg: #0d1117;           /* Fondo oscuro estilo GitHub */
+  --nav-border: #30363d;       /* Borde inferior sutil */
+  --text-main: #f0f6fc;        /* Texto principal (Blanco/Gris alto contraste) */
+  --text-muted: #8b949e;       /* Texto secundario */
+  --instagram: #dd7960;
+  --linkedin:rgb(73, 189, 224);     
+  --github:rgb(231, 222, 222);/* Celeste argentino moderno para acentos */
+}
+
+.navBarPrime{
+    background-color:rgb(33, 83, 90);
+   transition: background-color 0.5s ease-in-out; 
+}
+
+.navBarPrime:hover{
+    background-color: rgb(30, 39, 94);
+   
+}
+
+/* Borde e iluminación turquesa para el botón */
+.navbar-toggler {
+  border: 2px solid #00f2fe !important; /* Turquesa neón */
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.4); /* Resplandor suave */
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+/* Quitar el borde feo por defecto de Bootstrap cuando tiene foco/clic */
+.navbar-toggler:focus {
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.8) !important;
+  outline: none !important;
+}
+
+/* Pronunciar las 3 líneas horizontales con color turquesa intenso */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 242, 254, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.linkNavBarText{
+    color: rgb(88, 189, 230);
+    margin:50px
+}
+
+.social-group{
+  margin-left:30px;
+}
+
+.linkNavBarText:hover{
+    color:rgb(186, 233, 230);
+    transition:color 0.3s ease-in-out;
+}
+
+.instagram-icon-link:hover {
+  color: var(--instagram);
+  transform: translateY(-4px);
+}
+
+.linkedin-icon-link:hover{
+    color:var(--linkedin);
+    transform:translateY(-4px)
+}
+
+.github-icon-link:hover{
+    color:var(--github);
+    transform:translateY(-4px);
+}
+
+/* Ajustes Responsive para Móvil */
+@media (max-width: 991.98px) {
+  .social-group {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--nav-border);
+    margin:30px;
+  }
+  
+  .nav-custom-link::after {
+    display: none;
+  }
+}

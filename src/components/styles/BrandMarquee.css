@@ -1,0 +1,15 @@
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+/* Pausa el movimiento si el usuario pasa el cursor por encima */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
