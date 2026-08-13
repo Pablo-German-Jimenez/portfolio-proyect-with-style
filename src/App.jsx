@@ -5,6 +5,7 @@ import Aboutme from "./components/pages/AboutMe";
 import Projects from "./components/pages/Projects";
 import { Route } from "react-router-dom";
 import BannerContactoWpp from "./components/pages/WhatsappContact";
+import MyInspirations from './components/pages/MyInspirations';
 
 function App() {
   return (
@@ -16,9 +17,12 @@ function App() {
           <Route exact path={"/projects"}>
             <Projects />
           </Route>
+          <Route exact path={"/my-inspirations"}>
+            <MyInspirations />
+          </Route>
           <Route exact path={"/"}>
             <HeroCarousel />
-          </Route>
+          </Route>  
           <main className="max-w-7xl mx-auto w-full p-6 flex-1 flex flex-col justify-center items-center"></main>
           <BannerContactoWpp></BannerContactoWpp>
           <FooterBboyLinkinStyle></FooterBboyLinkinStyle>

@@ -1,4 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
+import '../styles/BrandMarquee.css'
 
 export const HeroCarousel = () => {
   return (
@@ -52,6 +53,27 @@ export const HeroCarousel = () => {
           </div>
         </Carousel.Item>
       </Carousel>
+      <div className="w-full overflow-hidden bg-slate-900 border-y border-slate-800 py-4">
+  <div className="animate-marquee gap-8 items-center">
+    
+    {/* PRIMER GRUPO DE IMÁGENES/MARCAS */}
+    <div className="flex gap-8 items-center shrink-0">
+      <img src="https://via.placeholder.com/120x40" alt="Brand 1" className="h-8 object-contain" />
+      <img src="https://via.placeholder.com/120x40" alt="Brand 2" className="h-8 object-contain" />
+      <img src="https://via.placeholder.com/120x40" alt="Brand 3" className="h-8 object-contain" />
+      <img src="https://via.placeholder.com/120x40" alt="Brand 4" className="h-8 object-contain" />
+    </div>
+
+    {/* SEGUNDO GRUPO (DUPLICADO EXACTO PARA CREAR EL BUCLE INFINITO) */}
+    <div className="flex gap-8 items-center shrink-0">
+      <img src="https://via.placeholder.com/120x40" alt="Brand 1" className="h-8 object-contain" />
+      <img src="https://via.placeholder.com/120x40" alt="Brand 3" className="h-8 object-contain" />
+      <img src="https://via.placeholder.com/120x40" alt="Brand 2" className="h-8 object-contain" />
+      <img src="https://via.placeholder.com/120x40" alt="Brand 4" className="h-8 object-contain" />
+    </div>
+
+  </div>
+</div>
     </div>
   );
 };
