@@ -11,7 +11,6 @@ export const HeroCarousel = () => {
               src="https://player.vimeo.com/video/1163408794?autoplay=1&loop=1&muted=1&background=1"
               className="w-full h-full object-cover pointer-events-none"
               title="vimeo-player"
-              frameBorder="0"
               allow="autoplay; fullscreen"
             ></iframe>
           </div>
@@ -21,7 +20,6 @@ export const HeroCarousel = () => {
             <iframe
               title="codingAndbrekinghand"
               src="https://player.vimeo.com/video/1217515914?h=806a99754e?autoplay=1&loop=1&muted=1&background=1"
-              frameBorder="0"
               className="w-full h-full object-cover"
               allow="autoplay; fullscreen"
             ></iframe>
@@ -33,8 +31,6 @@ export const HeroCarousel = () => {
               title="vimeo-player"
               src="https://player.vimeo.com/video/1214508497?h=3040ed10bf?autoplay=1&loop=1&muted=1&background=1"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[170%] h-[100%] min-w-full min-h-full object-cover pointer-events-none"
-              
-              frameBorder="0"
               allow="autoplay; fullscreen"
             ></iframe>
           </div>
@@ -58,18 +54,18 @@ export const HeroCarousel = () => {
     
     {/* PRIMER GRUPO DE IMÁGENES/MARCAS */}
     <div className="flex gap-8 items-center shrink-0">
-      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
     </div>
 
     {/* SEGUNDO GRUPO (DUPLICADO EXACTO PARA CREAR EL BUCLE INFINITO) */}
     <div className="flex  gap-8 items-center shrink-0">
-      <img src="../../../public/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="../../../public/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="./../../public/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
+      <img src="/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
     </div>
 
   </div>
