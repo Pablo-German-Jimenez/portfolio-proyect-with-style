@@ -1,4 +1,4 @@
-name: Frontend CI/CD 
+name: Frontend CI
 
 on:
   push:
@@ -26,24 +26,3 @@ jobs:
 
       - name: Build Vite App
         run: npm run build
-
-  deploy:
-    name: Deploy to Vercel
-    needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install Vercel CLI
-        run: npm install --global vercel@latest
-
-      - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
