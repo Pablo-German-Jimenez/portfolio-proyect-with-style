@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import '../styles/BrandMarquee.css'
+import "../styles/BrandMarquee.css";
 
 export const HeroCarousel = () => {
   return (
@@ -15,7 +15,7 @@ export const HeroCarousel = () => {
             ></iframe>
           </div>
         </Carousel.Item>
-        <Carousel.Item >
+        <Carousel.Item>
           <div className="relative h-[400px]  w-full bg-slate-900">
             <iframe
               title="codingAndbrekinghand"
@@ -37,7 +37,7 @@ export const HeroCarousel = () => {
         </Carousel.Item>
 
         <Carousel.Item>
-          <div  className="relative h-[400px] w-full bg-slate-900 d-flex justify-center">
+          <div className="relative h-[400px] w-full bg-slate-900 d-flex justify-center">
             <iframe
               title="vimeo-player"
               src="https://player.vimeo.com/video/1214512083?h=245ebed5ec&autoplay=1&loop=1&muted=1&background=1"
@@ -49,27 +49,57 @@ export const HeroCarousel = () => {
           </div>
         </Carousel.Item>
       </Carousel>
-      <div  className="w-full h-[50vh] overflow-hidden bg-slate-900 border-y border-slate-800 py-2 flex items-center ">
-  <div className="animate-marquee gap-8 items-center ">
-    
-    {/* PRIMER GRUPO DE IMÁGENES/MARCAS */}
-    <div className="flex gap-8 items-center shrink-0">
-      <img src="/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
-    </div>
+      <div className="w-full h-[50vh] overflow-hidden bg-slate-900 border-y border-slate-800 py-2 flex items-center ">
+        <div className="animate-marquee gap-8 items-center ">
+          {/* PRIMER GRUPO DE IMÁGENES/MARCAS */}
+          <div className="flex gap-8 items-center shrink-0">
+            <img
+              src="/bboyLinkinFlare.png"
+              alt="bboy LinkinFlare"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+            <img
+              src="/bboyLinkinairChair.png"
+              alt="bboy Linkin airchair"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+            <img
+              src="/bboyLinkinFlarePro.png"
+              alt="bboy Linkin flare"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+            <img
+              src="/bboyLinkinFreezePro.png"
+              alt="bboy Linkin freeze"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+          </div>
 
-    {/* SEGUNDO GRUPO (DUPLICADO EXACTO PARA CREAR EL BUCLE INFINITO) */}
-    <div className="flex  gap-8 items-center shrink-0">
-      <img src="/bboyLinkinFlare.png" alt="bboy LinkinFlare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="/bboyLinkinairChair.png" alt="bboy Linkin airchair" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="/bboyLinkinFlarePro.png" alt="bboy Linkin flare" className="h-full max-h-[20vh] w-auto object-contain" />
-      <img src="/bboyLinkinFreezePro.png" alt="bboy Linkin freeze" className="h-full max-h-[20vh] w-auto object-contain" />
-    </div>
-
-  </div>
-</div>
+          {/* SEGUNDO GRUPO (DUPLICADO EXACTO PARA CREAR EL BUCLE INFINITO) */}
+          <div className="flex  gap-8 items-center shrink-0">
+            <img
+              src="/bboyLinkinFlare.png"
+              alt="bboy LinkinFlare"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+            <img
+              src="/bboyLinkinairChair.png"
+              alt="bboy Linkin airchair"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+            <img
+              src="/bboyLinkinFlarePro.png"
+              alt="bboy Linkin flare"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+            <img
+              src="/bboyLinkinFreezePro.png"
+              alt="bboy Linkin freeze"
+              className="h-full max-h-[20vh] w-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
