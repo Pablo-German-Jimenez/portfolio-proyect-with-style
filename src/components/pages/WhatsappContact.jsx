@@ -5,7 +5,7 @@ const BannerContactoWppGmail = () => {
     <section className="w-full bg-dark text-white border-top border-secondary py-5 px-3 text-center">
       <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
         <div className="text-start">
-          <h3 className="fs-4 fw-bold mb-1">¿Do you have any project in mind?</h3>
+          <h3 className="fs-4 fw-bold mb-1">Do you have any project in mind?</h3>
           <p className="text-white small mb-0">Contact me through Whatsapp or gmail!.</p>
         </div>
 

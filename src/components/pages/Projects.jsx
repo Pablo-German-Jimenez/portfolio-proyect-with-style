@@ -4,7 +4,7 @@ const Projects = () => {
       <div className="card bg-dark mb-5 text-light border-secondary shadow-lg overflow-hidden">
         <div className="row g-0 align-items-center">
           <div className="col-lg-6">
-            <div className="project-img-wrapper p-3">
+            <div className="project-img-wrapper p-3 d-flex justify-content-center">
               <img
                 src="frontEndBakeryContability.png"
                 className="img-fluid rounded border border-secondary shadow"
