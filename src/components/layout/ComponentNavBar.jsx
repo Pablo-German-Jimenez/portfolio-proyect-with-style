@@ -15,16 +15,7 @@ const closeMenu =()=>setExpanded(false)
   
   return (
     <Navbar expand="lg" className="navBarPrime" expanded={expanded} onToggle={(isExpanded)=>setExpanded(isExpanded)}>
-        <div className={`app-wrapper ${isDark ? "dark-theme" : "light-theme"} ms-2`}>
-      {/* Botón flotante para alternar modo claro / oscuro */}
-      <button 
-        className="theme-toggle-btn"
-        onClick={() => setIsDark(!isDark)}
-        title={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
-      >
-        {isDark ? "☀️" : "🌙"}
-      </button>
-      </div>
+  
       <ReactAtom />
      
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
