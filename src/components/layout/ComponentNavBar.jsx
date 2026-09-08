@@ -15,10 +15,15 @@ const closeMenu =()=>setExpanded(false)
   
   return (
     <Navbar expand="lg" className="navBarPrime" expanded={expanded} onToggle={(isExpanded)=>setExpanded(isExpanded)}>
+  
       <ReactAtom />
+     
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      
       <Navbar.Collapse id="basic-navbar-nav">
+        
         <Nav className="me-auto gap-5">
+          
           <Nav.Link as={Link} to="aboutme" onClick={closeMenu}>
             <span className="linkNavBarText">About me🤖</span>
           </Nav.Link>

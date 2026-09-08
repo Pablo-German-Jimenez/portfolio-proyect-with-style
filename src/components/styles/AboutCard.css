@@ -57,7 +57,7 @@
 
 /* 2. Transición Foto B-Boy */
 @keyframes fadeBboy {
-  0%, 48% {
+  0%, 28% {
     opacity: 0;
     transform: scale(1.03);
   }
@@ -117,4 +117,130 @@
     box-shadow: 0 0 60px 30px rgba(255, 255, 255, 1), 0 0 100px 50px rgba(56, 189, 248, 0.8);
     filter: brightness(3);
   }
+}
+
+/* ========================================================
+   FULL STACK TECH BANNER
+   ======================================================== */
+.tech-banner-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.banner-prefix {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #34d399; /* emerald-400 */
+  text-transform: uppercase;
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+.tech-badge-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* Base de cada pill con imagen de fondo */
+.tech-pill {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.tech-pill:hover {
+  transform: translateY(-2px);
+}
+
+/* La imagen de fondo semitransparente detrás del texto */
+.tech-bg-logo {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  opacity: 0.32;
+  filter: blur(0.2px);
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tech-pill:hover .tech-bg-logo {
+  opacity: 0.7;
+  transform: translateY(-50%) scale(1.15);
+}
+
+/* El texto de la tecnología encima de la imagen */
+.tech-label {
+  position: relative;
+  z-index: 2;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Inversión de color para Express (es negro por defecto) */
+.invert-logo {
+  filter: invert(1) brightness(1.8);
+}
+
+/* Colores personalizados y efectos glow por tecnología */
+.tech-pill.mongo {
+  border-color: rgba(71, 162, 72, 0.4);
+}
+.tech-pill.mongo .tech-label {
+  color: #4ade80; /* Verde MongoDB */
+}
+.tech-pill.mongo:hover {
+  box-shadow: 0 0 10px rgba(71, 162, 72, 0.35);
+}
+
+.tech-pill.express {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.tech-pill.express .tech-label {
+  color: #f1f5f9; /* Blanco/Gris Express */
+}
+.tech-pill.express:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.tech-pill.react {
+  border-color: rgba(97, 218, 251, 0.4);
+}
+.tech-pill.react .tech-label {
+  color: #61dafb; /* Celeste React */
+}
+.tech-pill.react:hover {
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.35);
+}
+
+.tech-pill.node {
+  border-color: rgba(104, 160, 99, 0.4);
+}
+.tech-pill.node .tech-label {
+  color: #86efac; /* Verde Node */
+}
+.tech-pill.node:hover {
+  box-shadow: 0 0 10px rgba(104, 160, 99, 0.35);
 }
