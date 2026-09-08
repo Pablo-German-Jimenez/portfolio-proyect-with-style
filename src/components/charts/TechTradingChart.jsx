@@ -11,7 +11,7 @@ const techAssets = [
 
 export const TechTradingChart = () => {
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 max-w-5xl mx-auto my-6 shadow-xl font-mono">
+    <div className="bg-slate-900 border border-success rounded-2xl p-6 max-w-5xl mx-auto my-6 shadow-xl font-mono">
       <div className="flex justify-between items-center border-b border-slate-800 pb-4 mb-6">
         <div>
           <h2 className="text-sm me-5 font-semibold text-slate-400 uppercase tracking-wider border border-success rounded-3">

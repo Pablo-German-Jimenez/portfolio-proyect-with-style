@@ -1,3 +1,5 @@
+import { useId } from "react";
+
 export const SparklineChart = ({ yieldScore, className = "" }) => {
   // Extrae el valor numérico (ej: "+18.4%" -> 18.4)
   const numericValue =
@@ -14,8 +16,9 @@ export const SparklineChart = ({ yieldScore, className = "" }) => {
   const areaD = `${pathD} L 100,36 L 0,36 Z`;
 
   // ID único para evitar colisiones de gradientes en el DOM
-  const gradientId = `grad-${Math.random().toString(36).substring(2, 9)}`;
-
+  const rawId = useId();
+  
+  const gradientId = `grad-${rawId.replace(/:/g,'')}`;
   return (
     <div className={`w-full h-10 overflow-hidden ${className}`}>
       <svg

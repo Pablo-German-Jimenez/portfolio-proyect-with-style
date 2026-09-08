@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div
-      className={`app-wrapper ${isDark ? "dark-theme" : "light-theme"} ms-2`}
+      className={`app-wrapper ${isDark ? "dark-theme" : "light-theme"} `}
     >
       <div>
         {/* Botón flotante para alternar modo claro / oscuro */}
