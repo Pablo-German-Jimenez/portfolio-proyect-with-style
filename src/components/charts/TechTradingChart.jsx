@@ -1,4 +1,3 @@
-import React from 'react';
 
 const techAssets = [
   { symbol: "REACT", category: "Core Frontend", yieldScore: "+18.4%", status: "Bullish" },
