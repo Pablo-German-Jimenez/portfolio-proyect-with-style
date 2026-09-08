@@ -10,7 +10,7 @@ import {useState} from 'react'
 
 function NavBarComponent() {
 const [expanded,setExpanded] = useState(false);
-const[isDark,setIsDark]=useState(true);
+
 const closeMenu =()=>setExpanded(false)
   
   return (
