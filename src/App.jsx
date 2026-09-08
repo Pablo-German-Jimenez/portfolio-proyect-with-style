@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import FooterBboyLinkinStyle from "./components/layout/Footer";
 import NavBarComponent from "./components/layout/ComponentNavBar";
 import Aboutme from "./components/pages/AboutMe";
@@ -9,9 +10,13 @@ import { AboutCard } from './components/layout/AboutCard';
 import { TechTradingChart } from './components/charts/TechTradingChart';
 
 function App() {
+
+  
   return (
-        <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between">
+        <div  className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between">
+         
           <NavBarComponent />
+          
           <Route exact path={"/aboutme"}>
             <Aboutme />
           </Route>
