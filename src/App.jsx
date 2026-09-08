@@ -1,4 +1,3 @@
-import { HeroCarousel } from "./components/hero/HeroCarousel";
 import FooterBboyLinkinStyle from "./components/layout/Footer";
 import NavBarComponent from "./components/layout/ComponentNavBar";
 import Aboutme from "./components/pages/AboutMe";
@@ -6,6 +5,8 @@ import Projects from "./components/pages/Projects";
 import { Route } from "react-router-dom";
 import BannerContactoWpp from "./components/pages/WhatsappContact";
 import MyInspirations from './components/pages/MyInspirations';
+import { AboutCard } from './components/layout/AboutCard';
+import { TechTradingChart } from './components/charts/TechTradingChart';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
             <MyInspirations />
           </Route>
           <Route exact path={"/"}>
-            <HeroCarousel />
+          <AboutCard></AboutCard>
+          <TechTradingChart></TechTradingChart>
           </Route>  
           <main className="max-w-7xl mx-auto w-full p-6 flex-1 flex flex-col justify-center items-center"></main>
           <BannerContactoWpp></BannerContactoWpp>

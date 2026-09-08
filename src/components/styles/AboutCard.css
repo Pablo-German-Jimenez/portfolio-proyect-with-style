@@ -1,0 +1,120 @@
+/* Contenedor del marco de la foto */
+.photo-frame {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px solid rgba(16, 185, 129, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* Base común para ambas fotos */
+.photo-item {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ciclo total: 6s (3s cada foto) */
+.photo-formal {
+  animation: fadeFormal 6s infinite ease-in-out;
+}
+
+.photo-bboy {
+  animation: fadeBboy 6s infinite ease-in-out;
+}
+
+/* Capa del destello / rayo */
+.lightning-flash {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 1rem;
+  opacity: 0;
+  mix-blend-mode: screen;
+  animation: lightningBolt 6s infinite;
+}
+
+/* 1. Transición Foto Formal */
+@keyframes fadeFormal {
+  0%, 48% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50%, 98% {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 2. Transición Foto B-Boy */
+@keyframes fadeBboy {
+  0%, 48% {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  50%, 98% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+}
+
+/* 3. Destello de Rayo (explota al 50% = 3s y al 100% = 6s) */
+@keyframes lightningBolt {
+  /* Estado normal */
+  0%, 47%, 53%, 97% {
+    opacity: 0;
+    background: transparent;
+    box-shadow: none;
+    filter: brightness(1);
+  }
+
+  /* Primer relámpago a los 3 segundos (cambio a B-Boy) */
+  48% {
+    opacity: 0.85;
+    background: rgba(220, 245, 255, 0.85);
+    box-shadow: 0 0 45px 20px rgba(56, 189, 248, 0.9), inset 0 0 35px rgba(255, 255, 255, 1);
+    filter: brightness(2.5);
+  }
+  49% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+    background: #ffffff;
+    box-shadow: 0 0 60px 30px rgba(255, 255, 255, 1), 0 0 100px 50px rgba(56, 189, 248, 0.8);
+    filter: brightness(3);
+  }
+  52% {
+    opacity: 0;
+  }
+
+  /* Segundo relámpago a los 6 segundos (retorno a Formal) */
+  98% {
+    opacity: 0.85;
+    background: rgba(220, 245, 255, 0.85);
+    box-shadow: 0 0 45px 20px rgba(56, 189, 248, 0.9), inset 0 0 35px rgba(255, 255, 255, 1);
+    filter: brightness(2.5);
+  }
+  99% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    background: #ffffff;
+    box-shadow: 0 0 60px 30px rgba(255, 255, 255, 1), 0 0 100px 50px rgba(56, 189, 248, 0.8);
+    filter: brightness(3);
+  }
+}
