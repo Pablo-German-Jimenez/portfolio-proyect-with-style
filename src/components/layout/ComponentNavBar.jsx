@@ -54,7 +54,7 @@ const closeMenu =()=>setExpanded(false)
             <FaLinkedin style={{ fontSize: "50px" }} />
           </a>
           <a
-            href="https://instagram.com/tuusuario"
+            href="https://www.instagram.com/breakboylinkin/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram Profile"
